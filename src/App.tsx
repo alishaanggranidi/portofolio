@@ -4,7 +4,6 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import RootLayout from './app/layout';
 import Home from './app/page';
-import About from './app/about/page';
 import Projects from './app/projects/page';
 import ProjectDetail from './app/projects/[slug]/page';
 import AskAI from './app/ask-ai/page';
@@ -29,7 +28,6 @@ export default function App() {
       <RootLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/ask-ai" element={<AskAI />} />

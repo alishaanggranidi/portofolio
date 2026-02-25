@@ -95,7 +95,7 @@ export default function AskAIPage() {
                 <Bot size={20} />
               </div>
               <div>
-                <p className="font-serif font-bold text-ink">Alisha AI</p>
+                <p className="font-serif font-bold text-ink">cacai</p>
                 <p className="text-[10px] text-pink-accent font-bold uppercase tracking-widest">Online</p>
               </div>
             </div>

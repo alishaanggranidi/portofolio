@@ -30,7 +30,6 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-4xl md:text-6xl font-serif font-bold leading-[0.9] tracking-tight text-ink"
         >
-           <br />
           <span className="text-pink-accent">Focused on Applied Systems</span>
         </motion.h1>
 

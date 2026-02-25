@@ -46,7 +46,7 @@ export default function Highlights() {
           className="mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6">
-            Technical <span className="text-pink-accent italic">Focus.</span>
+            Technical <span className="text-pink-accent italic">Focus </span>
           </h2>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
             Applied AI systems with focus on reliability, evaluation, and practical deployment.
