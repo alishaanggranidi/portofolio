@@ -28,10 +28,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-8xl font-serif font-bold leading-[0.9] tracking-tight text-ink"
+          className="text-4xl md:text-6xl font-serif font-bold leading-[0.9] tracking-tight text-ink"
         >
-          Crafting <span className="text-pink-accent italic">Intelligent</span> <br />
-          Systems.
+           <br />
+          <span className="text-pink-accent">Focused on Applied Systems</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -39,10 +39,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-8 text-xl md:text-2xl text-ink/60 max-w-2xl leading-relaxed font-light"
+          className="mt-6 text-xl md:text-xxl text-ink/60 max-w-2xl leading-relaxed font-light"
         >
-          Building structured AI architectures and 
-          automated workflows for high-impact implementation.
+          Building RAG architectures, machine learning models, 
+          and automation workflows for practical implementation.
         </motion.p>
 
         {/* Buttons */}
@@ -88,9 +88,9 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 1 }}
           className="mt-20 pt-10 border-t border-pink-soft/20"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-ink/40 mb-6 font-bold">Core Stack</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-ink/40 mb-6 font-bold">Tech Stack</p>
           <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-mono text-ink/50">
-            {["Python", "FastAPI", "Laravel", "Golang", "PyTorch", "Docker", "GCP"].map((tech) => (
+            {["Python", "RAG Architecture", "Tensorflow", "PyTorch", "Pinecone", "FastAPI", "PostgreSQL"].map((tech) => (
               <span key={tech} className="hover:text-pink-accent transition-colors cursor-default">
                 {tech}
               </span>

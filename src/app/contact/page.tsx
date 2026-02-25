@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="space-y-8">
             <h2 className="text-3xl font-bold">Contact Information</h2>
             <p className="text-ink/70 leading-relaxed">
-              I'm currently open to new opportunities in AI Engineering, Machine Learning, and Backend Development. Feel free to reach out through any of these channels.
+              I'm currently open to new opportunities in AI Engineering, Machine Learning. Feel free to reach out through any of these channels.
             </p>
           </div>
 

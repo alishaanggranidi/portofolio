@@ -12,7 +12,7 @@ export default function Footer() {
             Alisha Anggranidi Salsabila
           </h3>
           <p className="mt-2 text-gray-600">
-            AI Engineer | Machine Learning & Backend Developer
+            AI Engineer | Machine Learning 
           </p>
           <p className="mt-3 text-gray-500">
             Building structured and scalable AI systems.

@@ -30,7 +30,7 @@ export default function SkillsPage() {
       color: "bg-pink-accent/10"
     },
     {
-      title: "Cloud & DevOps",
+      title: "Deployment",
       icon: <Cloud className="text-pink-accent" />,
       items: ["GCP", "Docker", "Jenkins", "GitHub Actions", "Kubernetes"],
       color: "bg-pink-soft/10"

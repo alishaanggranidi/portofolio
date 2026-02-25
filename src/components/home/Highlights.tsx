@@ -7,28 +7,28 @@ const highlights = [
   {
     title: "AI Development",
     description:
-      "Designing RAG systems, agentic workflows, AI API integrations, and enterprise automation solutions.",
+      "RAG systems, agent orchestration, LLM integration, and automation workflows",
     icon: Brain,
     color: "bg-pink-soft/10"
   },
   {
     title: "Machine Learning",
     description:
-      "Medical AI, NLP, computer vision, structured validation, and experimental model evaluation.",
+      "Medical AI, NLP, computer vision, structured validation, and model evaluation",
     icon: Database,
     color: "bg-pink-accent/10"
   },
   {
     title: "Backend Engineering",
     description:
-      "Building scalable APIs and backend systems using FastAPI, Laravel, Golang, and PostgreSQL.",
+      "API design, backend services, and database architecture using Python-based frameworks",
     icon: Server,
     color: "bg-pink-soft/10"
   },
   {
-    title: "DevOps & Cloud",
+    title: "Deployment",
     description:
-      "Containerization, CI/CD pipelines, and cloud deployment using Docker, Jenkins, and Google Cloud.",
+      "Docker containerization and cloud deployment experimentation",
     icon: Cloud,
     color: "bg-pink-soft/10"
   },
@@ -46,11 +46,10 @@ export default function Highlights() {
           className="mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6">
-            Core <span className="text-pink-accent italic">Expertise.</span>
+            Technical <span className="text-pink-accent italic">Focus.</span>
           </h2>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
-            A structured combination of AI research, backend development,
-            and system implementation focused on practical and scalable solutions.
+            Applied AI systems with focus on reliability, evaluation, and practical deployment.
           </p>
         </motion.div>
 
