@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,10 +12,7 @@ export default function Footer() {
             Alisha Anggranidi Salsabila
           </h3>
           <p className="mt-2 text-gray-600">
-            AI Engineer | Machine Learning 
-          </p>
-          <p className="mt-3 text-gray-500">
-            Building structured and scalable AI systems.
+            Building thoughtful and scalable AI systems
           </p>
         </div>
 
@@ -36,31 +33,38 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Connect</h4>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/alishaas"
+              href="https://github.com/alishaanggranidi"
               target="_blank"
               className="hover:text-[#D67BA8]"
             >
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/alishaas"
+              href="https://linkedin.com/in/alishaanggranidi"
               target="_blank"
               className="hover:text-[#D67BA8]"
             >
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:alisha@example.com"
+              href="mailto:anggranidi@gmail.com"
               className="hover:text-[#D67BA8]"
             >
               <Mail size={20} />
+            </a>
+            <a
+              href="https://instagram.com/anggranidi"
+              target="_blank"
+              className="hover:text-[#D67BA8]"
+            >
+              <Instagram size={20} />
             </a>
           </div>
         </div>
       </div>
 
       <div className="text-center text-xs text-gray-500 py-6 border-t border-[#E8B4C8]/30">
-        © {new Date().getFullYear()} Alisha Anggranidi Salsabila. Built with React & Tailwind CSS.
+        © {new Date().getFullYear()} Designed & developed by Alisha with React and Tailwind CSS 
       </div>
     </footer>
   );

@@ -1,14 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, Mail, Instagram } from "lucide-react";
 
 export default function AboutSection() {
   return (
     <section className="py-32 border-t border-pink-soft/20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-
-        {/* TEXT SIDE */}
+            {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -22,7 +21,7 @@ export default function AboutSection() {
           <p className="mt-6 text-lg text-ink/60 leading-relaxed">
             I focus on building applied AI systems with structured design and
             practical implementation. My work combines machine learning,
-            retrieval-based architectures, and backend engineering to create
+            retrieval based architectures, and backend to create
             solutions that are not only intelligent, but reliable.
           </p>
 
@@ -32,11 +31,12 @@ export default function AboutSection() {
             readiness.
           </p>
 
-          {/* SOCIAL ICONS — PINDAH KE SINI */}
+            {/* Social Media */}   
           <div className="flex gap-5 mt-8">
             <a
               href="https://linkedin.com/in/alishaanggranidi"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-ink/50 hover:text-pink-accent transition"
             >
               <Linkedin size={22} />
@@ -45,14 +45,28 @@ export default function AboutSection() {
             <a
               href="https://github.com/alishaanggranidi"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-ink/50 hover:text-pink-accent transition"
             >
               <Github size={22} />
             </a>
+            <a
+              href="mailto:anggranidi@gmail.com"
+              className="text-ink/50 hover:text-pink-accent transition"
+            >
+              <Mail size={22} />
+            </a>
+            <a
+              href="https://instagram.com/anggranidi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink/50 hover:text-pink-accent transition">        
+              <Instagram size={22} />
+            </a>
           </div>
         </motion.div>
 
-        {/* PHOTO SIDE */}
+            {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +76,7 @@ export default function AboutSection() {
         >
           <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-xl border border-pink-soft/30">
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.jpeg"
               alt="Alisha Anggranidi Salsabila"
               className="w-full h-full object-cover"
             />

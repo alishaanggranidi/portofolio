@@ -7,12 +7,10 @@ import { motion } from "motion/react";
 export default function Hero() {
   return (
     <section className="relative flex flex-col justify-center min-h-[90vh] overflow-hidden">
-      {/* Background Decorative Elements */}
       <div className="absolute top-1/4 -right-20 w-96 h-96 bg-pink-soft/10 rounded-full blur-3xl -z-10 animate-pulse" />
       <div className="absolute bottom-1/4 -left-20 w-72 h-72 bg-pink-accent/5 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-5xl">
-        {/* Small intro */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
