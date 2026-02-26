@@ -10,22 +10,18 @@ export default function EducationPage() {
       period: "2022 – 2026",
       location: "Bandung, Indonesia",
       achievements: [
-        "Focus on Intelligent Systems and Data Science",
-        "Active in research and academic assistance",
-        "Maintaining high academic standards in core CS subjects"
+        "Coursework in machine learning, data structures, algorithms, and database systems",
+        "Academic involvement in AI and data related projects",
+        "Participated in research and teaching assistance activities"
       ]
     },
     {
       school: "SMA Negeri 1 Mataram",
-      degree: "High School Diploma",
-      major: "Natural Sciences and Mathematics",
-      period: "August 2019 - March 2022",
+      degree: "Natural Sciences and Mathematics",
+      major: " Mathematics, Chemistry, Biology",
+      period: "2019 - 2022",
       location: "Mataram, Indonesia",
-      achievements: [
-        "Top 5% of graduating class",
-        "Active in Science and Technology Club",
-        "Focused on advanced mathematics and physics"
-      ]
+      achievements: []
     }
   ];
 
@@ -39,10 +35,9 @@ export default function EducationPage() {
           className="mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
-            Academic <span className="text-pink-accent italic">Foundation.</span>
+            <span className="text-pink-accent italic">Education</span>
           </h1>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
-            The roots of my technical curiosity and mathematical rigor.
           </p>
         </motion.div>
 
@@ -82,11 +77,11 @@ export default function EducationPage() {
                 </div>
 
                 <p className="text-xl text-ink/70 font-medium mb-8">
-                  Major in <span className="text-pink-accent">{edu.major}</span>
+                  Concentration in <span className="text-pink-accent">{edu.major}</span>
                 </p>
 
                 <div className="space-y-3">
-                  <p className="text-xs uppercase tracking-[0.2em] text-ink/40 font-bold mb-4">Key Highlights</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-ink/40 font-bold mb-4"></p>
                   {edu.achievements.map((ach, i) => (
                     <div key={i} className="flex items-start gap-3 text-ink/60 font-light">
                       <div className="w-1.5 h-1.5 rounded-full bg-pink-accent mt-2 shrink-0" />

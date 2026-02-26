@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Code2, Server, Globe, Cpu, Cloud, Award } from "lucide-react";
+import { desc } from "motion/react-client";
 
 export default function SkillsPage() {
   const skillGroups = [
@@ -101,20 +102,19 @@ export default function SkillsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "EfficientNetV2 Research",
-                desc: "Implemented patient level validation for medical imaging classification to reduce Published research on patient-level validation for medical imaging."
+                title: "Conference & Academic Achievements",
+                desc: "Presenter ICGTD Conference",
+                image: "/public/images/achievements/icgtd.png"
               },
               {
-                title: "Agentic RAG Implementation",
-                desc: "Deployed multi agent systems for complex document reasoning."
-              },
-              {
-                title: "Enterprise ETL Pipelines",
-                desc: "Architected high-throughput data processing systems for BI."
+                title: "Dicoding Camp Powered by DBS Foundation",
+                desc: "Machine Learning Path (2025), Top 5 Most Interactive Student at English ILT Weekly Session.",
+                image: "/public/images/achievements/dicoding.png"
               }
             ].map((achievement, idx) => (
               <div key={idx} className="p-8 bg-white rounded-3xl border border-pink-soft/10 shadow-sm hover:shadow-md transition-shadow">
-                <p className="text-pink-accent font-mono text-xs uppercase tracking-widest mb-4">0{idx + 1}</p>
+                <img src={achievement.image} alt={achievement.title} className="w-full h-60 object-cover rounded-xl mb-4" />
+                <p className="text-pink-accent font-mono text-xs uppercase tracking-widest mb-4"></p>
                 <h4 className="text-xl font-serif font-bold mb-3">{achievement.title}</h4>
                 <p className="text-ink/60 font-light">{achievement.desc}</p>
               </div>

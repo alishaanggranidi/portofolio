@@ -4,31 +4,32 @@ import { Briefcase, Calendar } from "lucide-react";
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "AI Development (Automation AI Analytics) – Internship",
+      title: "AI Development (Automation AI Analytics) Internship",
       company: "PT. Infomedia Nusantara",
       period: "Jul 2025 – Dec 2025",
-      description: "Focused on business AI integration, developing automated analytics workflows and implementing prompt engineering strategies for enterprise solutions.",
-      tech: ["AI APIs", "Prompt Engineering", "Workflow Automation", "Business AI"]
+      description: "Contributed to business oriented AI initiatives, focusing on workflow automation and AI integration. Supported analytics processes through API usage, prompt engineering, and structured automation design.",
+      tech: ["AI APIs", "Prompt Engineering", "Workflow Automation"]
     },
     {
       title: "Machine Learning Path Cohort",
       company: "Coding Camp powered by DBS Foundation",
       period: "Feb 2025 – Jul 2025",
-      description: "Intensive training in Machine Learning. Recognized as Top 5 in English ILT Weekly Consultation for effective communication and technical clarity.",
+      description: `- Completed structured training in machine learning, covering supervised learning, model evaluation, and applied data analysis using Python.
+      - Recognized as a Top 5 Most Interactive Participant in the English ILT Weekly Consultation.`,
       tech: ["Machine Learning", "Data Science", "Python"]
     },
     {
       title: "Assistant Lecturer",
       company: "Telkom University",
-      period: "2024 - Present",
-      description: "Assisting in teaching Discrete Mathematics and Mathematical Logic. Responsible for conducting tutorials and evaluating student performance.",
+      period: "2023 - 2025",
+      description: "Assisting in teaching Discrete Mathematics and Mathematical Logic. Responsible for conducting tutorials sessions, supporting grading activities, and helping students strengthen analytical and problem solvung skills",
       tech: ["Discrete Math", "Mathematical Logic", "Teaching"]
     },
     {
       title: "Discrete Mathematics Tutor",
-      company: "Private / Academic Support",
-      period: "2023 - Present",
-      description: "Providing specialized tutoring in Discrete Mathematics, helping students master foundational concepts for computer science.",
+      company: "HIMA IF Telkom University",
+      period: "2024 - 2025",
+      description: "Provided additional academic support sessions for students requiring reinforcement in discrete mathematics concepts, including logic, combinatorics, and graph theory.",
       tech: ["Mathematics", "Tutoring"]
     }
   ];
@@ -43,7 +44,7 @@ export default function ExperiencePage() {
           className="mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
-            Professional <span className="text-pink-accent italic">Journey.</span>
+            <span className="text-pink-accent italic">Experience</span>
           </h1>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
             A track record of building complex AI systems and scalable 
@@ -76,7 +77,7 @@ export default function ExperiencePage() {
                 </div>
                 <h3 className="text-2xl font-serif font-bold mb-1 text-ink">{exp.title}</h3>
                 <p className="text-pink-accent/80 font-medium mb-4">{exp.company}</p>
-                <p className="text-ink/60 font-light leading-relaxed mb-6">
+                <p className="text-ink/60 font-light leading-relaxed mb-6 whitespace-pre-line">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
