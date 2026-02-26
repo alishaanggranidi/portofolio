@@ -3,6 +3,7 @@ export type Project = {
   slug: string;
   category: "AI Systems" | "Machine Learning" | "Data Engineering" | "Web Development" | "Automation";
   description: string;
+  image: string;
   tech: string[];
   github?: string;
   demo?: string;
@@ -25,6 +26,7 @@ export const projects: Project[] = [
       "Embedding Models",
       "Langfuse"
     ],
+    image: "/public/images/projects/agentic.png",
   },
 
   // 2
@@ -33,7 +35,7 @@ export const projects: Project[] = [
     slug: "breast-cancer-detection",
     category: "Machine Learning",
     description:
-      "Computer-Aided Diagnosis (CAD) system for early breast cancer detection using Full Field Digital Mammography (FFDM). Implemented EfficientNetV2-B0 with patient-level Group K-Fold cross-validation to prevent data leakage and ensure reliable generalization. Emphasized methodological validity and computational efficiency.",
+      "Computer Aided Diagnosis model for breast cancer detection using EfficientNetV2 B0 with patient level cross validation.",
     tech: [
       "Python",
       "TensorFlow / Keras",
@@ -43,6 +45,7 @@ export const projects: Project[] = [
       "Seaborn"
     ],
     github: "https://github.com/alishaanggranidi/ta",
+    image: "/public/images/projects/breastcancer.png",
   },
 
   // 3
@@ -51,7 +54,7 @@ export const projects: Project[] = [
     slug: "emolog",
     category: "AI Systems",
     description:
-      "AI-based journaling web application that classifies user mood from diary entries using transformer models. Designed full-stack architecture with React frontend, Next.js and Express backend, and PostgreSQL database. Integrated NLP pipeline with PyTorch and HuggingFace Transformers.",
+      "AI based mood journaling application with transformer based text classification and full stack implementation",
     tech: [
       "React.js",
       "Next.js",
@@ -63,6 +66,7 @@ export const projects: Project[] = [
       "Scikit-learn"
     ],
     demo: "https://youtu.be/Eqh0h5OgEbU?feature=shared",
+    image: "/public/images/projects/emolog.png",
   },
 
   // 4
@@ -77,6 +81,7 @@ export const projects: Project[] = [
       "Experiment Documentation",
       "Cross-Functional Collaboration"
     ],
+    image: "/public/images/projects/aiframework.png",
   },
 
   // 5
@@ -92,6 +97,7 @@ export const projects: Project[] = [
       "Scoring Analysis",
       "Documentation"
     ],
+    image: "/public/images/projects/aimaturity.png",
   },
 
   // 6
@@ -109,6 +115,7 @@ export const projects: Project[] = [
       "Google Sheets API"
     ],
     github: "https://github.com/alishaanggranidi/etl-pipeline",
+    image: "/public/images/projects/etl.png",
   },
 
   // 7
@@ -125,6 +132,7 @@ export const projects: Project[] = [
       "TensorFlow / Keras"
     ],
     github: "https://github.com/alishaanggranidi/recommender-system",
+    image: "/public/images/projects/recommender.png",
   },
 
   // 8
@@ -141,6 +149,7 @@ export const projects: Project[] = [
       "JavaScript",
       "Google Sheets API"
     ],
+    image: "/public/images/projects/automation.png",
   },
 
   // 9
@@ -157,6 +166,7 @@ export const projects: Project[] = [
       "TensorFlow.js"
     ],
     github: "https://github.com/alishaanggranidi/klasifikasigambar",
+    image: "/public/images/projects/waste.png",
   },
 
   // 10
@@ -173,6 +183,7 @@ export const projects: Project[] = [
       "CSS"
     ],
     github: "https://github.com/alishaanggranidi/joypad",
+    image: "/public/images/projects/joypad.png",
   },
 
   // 11
@@ -191,6 +202,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/alishaanggranidi/Analysis-Bike-Rental",
     demo: "https://analysis-bike-rental-alishaanggranidi.streamlit.app",
+    image: "/public/images/projects/dashboard.png",
   }
 
 ];

@@ -13,12 +13,12 @@ export default function ProjectDetail() {
   if (!project) {
     return (
       <div className="pt-40 text-center space-y-8">
-        <h1 className="text-3xl font-bold">Project not found</h1>
+        <h1 className="text-3xl font-bold">Project not available</h1>
         <button 
           onClick={() => navigate('/projects')}
           className="bg-[#D67BA8] text-white px-6 py-2 rounded-xl"
         >
-          Back to Projects
+          All Projects
         </button>
       </div>
     );
@@ -39,7 +39,7 @@ export default function ProjectDetail() {
           className="inline-flex items-center gap-2 text-sm mb-10 hover:text-[#D67BA8]"
         >
           <ArrowLeft size={16} />
-          Back to Projects
+          All Projects
         </Link>
 
         {/* Image */}
@@ -81,7 +81,7 @@ export default function ProjectDetail() {
               className="inline-flex items-center gap-2 bg-[#D67BA8] text-white px-6 py-3 rounded-2xl hover:opacity-90 transition"
             >
               <Github size={18} />
-              View GitHub
+              Source Code
             </a>
           )}
 
@@ -92,17 +92,9 @@ export default function ProjectDetail() {
               className="inline-flex items-center gap-2 border border-[#D67BA8] text-[#D67BA8] px-6 py-3 rounded-2xl hover:bg-[#D67BA8] hover:text-white transition"
             >
               <ExternalLink size={18} />
-              Live Demo
+              View Demo
             </a>
           )}
-        </div>
-
-        {/* Content Sections */}
-        <div className="space-y-14">
-          <Section title="Overview" content={project.overview} />
-          <Section title="Problem" content={project.problem} />
-          <Section title="Approach" content={project.approach} />
-          <Section title="Results" content={project.results} />
         </div>
 
         {/* Tech */}

@@ -71,12 +71,13 @@ export default function ProjectsPage() {
               >
                 <Link to={`/projects/${project.slug}`} className="block relative aspect-[16/10] rounded-[2.5rem] overflow-hidden mb-8 shadow-sm group-hover:shadow-2xl transition-all duration-500">
                   <img 
-                    src={project.image || `https://picsum.photos/seed/${project.slug}/800/500`} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
+                    src={project.image}
                   />
                   <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/0 transition-colors duration-500" />
+
                   <div className="absolute top-6 right-6 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] uppercase tracking-widest font-bold text-ink shadow-sm">
                     {project.category}
                   </div>

@@ -6,10 +6,11 @@ import { Project } from '../../data/projects';
 
 interface ProjectCardProps {
   project: Project;
+  image?: string;
   key?: string | number;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, image }: ProjectCardProps) {
   return (
     <motion.div
       layout
