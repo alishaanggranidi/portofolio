@@ -17,7 +17,7 @@ export const projects: Project[] = [
     slug: "agentic-rag-chatbot",
     category: "AI Systems",
     description:
-      "Agentic chatbot prototype built using Retrieval Augmented Generation (RAG) architecture with multi-agent orchestration. Integrates Pinecone for semantic retrieval, Google ADK for coordination, structured function calling, simple personalization, and out-of-scope detection. Includes response evaluation for accuracy and consistency monitoring.",
+    "Multi agent RAG prototype integrating semantic retrieval, structured function calling, and basic personalization. Designed to evaluate response grouding, out of scope detection, and consistency using retrieval pipelines and monitoring tools.",
     tech: [
       "Python",
       "Pinecone",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     slug: "breast-cancer-detection",
     category: "Machine Learning",
     description:
-      "Computer Aided Diagnosis model for breast cancer detection using EfficientNetV2 B0 with patient level cross validation.",
+    " Computer aided diagnosis model for breast cancer detection using EfficientNetV2 B0 on FFDM data. Implemented patient level Group K Fold cross validation to reduce data leakage and ensure reliable generalization across cases.",
     tech: [
       "Python",
       "TensorFlow / Keras",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     slug: "emolog",
     category: "AI Systems",
     description:
-      "AI based mood journaling application with transformer based text classification and full stack implementation",
+      "AI based journaling application that classifies user mood from text entries using transformer models. Built with a full stack architecture integrating React, backend services, and a structured NLP pipeline for text preprocessing and inference ",
     tech: [
       "React.js",
       "Next.js",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     slug: "ai-implementation-framework",
     category: "AI Systems",
     description:
-      "Cross-department internship research project focused on structured enterprise AI implementation practices. Contributed within the Development division by researching AI development workflows, supporting experimentation documentation, and preparing structured internal presentations.",
+    " Internship research project focused on documenting structured AI development workflows within an enterprise setting. Contibuted to experimentation tracking, development process analysis, and internal technical reporting.",
     tech: [
       "AI Workflow Research",
       "Experiment Documentation",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     slug: "ai-maturity-assessment",
     category: "Data Engineering",
     description:
-      "AI maturity assessment across business units using a multi-dimensional evaluation framework. Processed survey data, conducted scoring analysis, mapped maturity levels, and prepared structured documentation for internal reporting.",
+    " Conducted AI maturity assessment across business units using a structured evaluation framework. Processed survey data, analyzed scoring dimensions, and prepared documentation to support internal strategic planning.",
     tech: [
       "Google Forms",
       "Spreadsheets",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     slug: "etl-pipeline",
     category: "Data Engineering",
     description:
-      "Automated ETL pipeline that scraped 50 web pages, performed data cleaning and transformation, and stored outputs in CSV, Google Sheets, and PostgreSQL simultaneously.",
+    "Automated ETL pipeline that scraped structured data from multiple web pages, performed cleaning and transformation, and stored outputs in CSV, Google Sheets, and PostgreSQL for furter analysis.",
     tech: [
       "Python",
       "BeautifulSoup",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     slug: "cellphone-recommender",
     category: "Machine Learning",
     description:
-      "Hybrid recommendation system combining content-based filtering using cosine similarity and collaborative filtering with neural networks. Integrates product specifications and user rating history to generate personalized smartphone recommendations.",
+    "Hybrid recommendation system combining content based filtering and collaborative filtering approaches. Integrated product specifications and user interaction data to generate personalized smartphone recommendations.",
     tech: [
       "Python",
       "Pandas",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     slug: "financial-automation-system",
     category: "Automation",
     description:
-      "Automated financial recording system integrating Telegram Bot API and n8n workflow automation. Processes incoming messages, transforms them into structured financial data using Groq inference and JavaScript function nodes, and stores results in Google Sheets.",
+    "Automated financial recording workflow integrating Telegram Bot API and n8n orchestration. Parsed incoming messages into structured financial records and stored outputs in Google Sheets using scripted transformation logic.",
     tech: [
       "n8n Cloud",
       "Telegram Bot API",
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     slug: "waste-classification-cnn",
     category: "Machine Learning",
     description:
-      "Convolutional Neural Network (CNN) model for classifying waste into plastic, paper, and garbage categories. Achieved ≥85% accuracy. Exported model to SavedModel, TFLite, and TensorFlow.js formats for deployment flexibility.",
+    "Convolutional neural network modoel for classifying waste images into predefined categories. Trained and exported into multiple deployment formats including SavedModel, TFLite, and TensorFlow.js.",
     tech: [
       "Python",
       "TensorFlow / Keras",
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     slug: "joypad-journey",
     category: "Web Development",
     description:
-      "Web-based booking system adapted from a reference project and extended with additional features to improve reservation flow and administrative data management. Designed to streamline customer booking and backend record tracking.",
+    "Web based booking application adapted and extended with additional features for reservation management and administrative record tracking using a structured frontend backend flow.",
     tech: [
       "Next.js",
       "JavaScript",
@@ -192,7 +192,7 @@ export const projects: Project[] = [
     slug: "streamlit-data-dashboard",
     category: "Data Engineering",
     description:
-      "Interactive data analysis dashboard covering data collection, cleaning, exploratory data analysis, visualization, and deployment to Streamlit Cloud.",
+    "Interactive data analysis dashboard covering data cleaning, exploratory analysis, visualization, and deployment using Streamlit for lightweight reporting and monitoring.",
     tech: [
       "Python",
       "Pandas",

@@ -57,17 +57,14 @@ export default function ProjectDetail() {
           />
         </motion.div>
 
-        {/* Title */}
         <h1 className="text-4xl font-semibold mb-4">
           {project.title}
         </h1>
 
-        {/* Category */}
         <span className="inline-block mb-6 text-xs px-4 py-1 rounded-full bg-[#E8B4C8]/20 text-[#D67BA8]">
           {project.category}
         </span>
 
-        {/* Description */}
         <p className="text-lg text-gray-600 mb-10 leading-relaxed">
           {project.description}
         </p>

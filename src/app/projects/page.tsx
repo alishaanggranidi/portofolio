@@ -6,7 +6,7 @@ import { projects } from "../../data/projects";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Filter } from "lucide-react";
 
-const filters = ["All", "AI Systems", "Machine Learning", "Engineering"];
+const filters = ["All", "AI Systems", "Machine Learning", "Data Engineering", "Web Development", "Automation"];
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -27,11 +27,10 @@ export default function ProjectsPage() {
           className="mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
-            Selected <span className="text-pink-accent italic">Works.</span>
+            <span className="text-pink-accent italic">Projects</span>
           </h1>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
-            A curated collection of AI architectures, machine learning research, 
-            and scalable engineering solutions.
+            Practical implementations across AI and data systems.
           </p>
         </motion.div>
 

@@ -19,8 +19,6 @@ export default function SkillsPage() {
       title: "AI & Machine Learning",
       icon: <Cpu className="text-pink-accent" />,
       items: [
-        "Deep Learning",
-        "Computer Vision",
         "RAG Architecture",
         "LLM Integration",
         "PyTorch",
@@ -30,7 +28,7 @@ export default function SkillsPage() {
       color: "bg-pink-accent/10"
     },
     {
-      title: "Deployment",
+      title: "Infrastructure & Deployment",
       icon: <Cloud className="text-pink-accent" />,
       items: ["GCP", "Docker", "Jenkins", "GitHub Actions", "Kubernetes"],
       color: "bg-pink-soft/10"
@@ -47,11 +45,10 @@ export default function SkillsPage() {
           className="mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
-            Technical <span className="text-pink-accent italic">Arsenal.</span>
+            <span className="text-pink-accent italic">Skills</span>
           </h1>
           <p className="text-xl text-ink/60 max-w-2xl font-light">
-            A comprehensive toolkit built through years of research, 
-            experimentation, and enterprise-grade implementation.
+           Tools and technologies used across AI, machine learning, and data projects.
           </p>
         </motion.div>
 
@@ -98,18 +95,18 @@ export default function SkillsPage() {
         >
           <div className="flex items-center gap-4 mb-12">
             <Award className="text-pink-accent" size={32} />
-            <h2 className="text-4xl font-serif font-bold">Key Achievements</h2>
+            <h2 className="text-4xl font-serif font-bold">Achievements</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: "EfficientNetV2 Research",
-                desc: "Published research on patient-level validation for medical imaging."
+                desc: "Implemented patient level validation for medical imaging classification to reduce Published research on patient-level validation for medical imaging."
               },
               {
                 title: "Agentic RAG Implementation",
-                desc: "Deployed multi-agent systems for complex document reasoning."
+                desc: "Deployed multi agent systems for complex document reasoning."
               },
               {
                 title: "Enterprise ETL Pipelines",
