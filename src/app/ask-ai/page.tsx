@@ -13,7 +13,7 @@ export default function AskAIPage() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hello! I'm Alisha's AI assistant. I can tell you about her technical background, projects, or research focus. What would you like to know?"
+      content: "Hi, I can share information about Alisha's experience, projects, and research interests. What would you like to know?"
     }
   ]);
   const [input, setInput] = useState("");
@@ -64,9 +64,18 @@ export default function AskAIPage() {
     }]);
   };
 
+  const suggestedQuestions = [
+    "Apa project AI yang pernah dikerjakan Alisha?",
+    "Teknologi apa yang sering digunakan?",
+    "Apa pengalaman Alisha dengan RAG systems?",
+    "Apa riset terbaru Alisha di bidang machine learning?",
+    "Bagaimana latar belakang pendidikan Alisha?",
+    "Apa keahlian utama Alisha dalam AI development?"
+  ];
+
   return (
     <section className="py-24 min-h-[90vh] flex flex-col">
-      <div className="max-w-4xl mx-auto w-full flex-1 flex flex-col">
+      <div className="max-w-6xl mx-auto w-full flex-1 flex flex-col px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,11 +87,10 @@ export default function AskAIPage() {
             AI Assistant
           </div>
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
-            Ask My <span className="text-pink-accent italic">Digital Twin.</span>
+            <span className="text-pink-accent italic">AI Assistant</span>
           </h1>
           <p className="text-lg text-ink/60 max-w-xl mx-auto font-light">
-            Powered by Groq Llama 3. Trained to represent my technical 
-            philosophy and experience.
+            Powered by Llama 3 via Groq.
           </p>
         </motion.div>
 
@@ -154,13 +162,23 @@ export default function AskAIPage() {
               </motion.div>
             )}
           </div>
-
           {/* Input Area */}
           <div className="p-6 bg-cream/10 border-t border-pink-soft/10">
+          <div className="flex flex-wrap gap-2 mb-4">
+              {suggestedQuestions.map((q) => (
+                <button
+                  key={q}
+                  onClick={() => setInput(q)}
+                  className="px-3 py-1 text-xs rounded-full bg-pink-soft/10 text-pink-accent hover:bg-pink-accent hover:text-white transition-colors"
+                >
+                  {q}
+                </button>
+              ))}
+          </div>
             <div className="relative flex items-center">
               <input
                 type="text"
-                placeholder="Ask about my projects, experience, or AI systems..."
+                placeholder="Ask about projects, research, or experience..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className="w-full pl-6 pr-16 py-4 rounded-2xl border border-pink-soft/20 bg-white focus:outline-none focus:ring-2 focus:ring-pink-accent/20 focus:border-pink-accent/40 transition-all shadow-sm"

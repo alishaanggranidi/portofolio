@@ -101,10 +101,9 @@ export default function ExperiencePage() {
           className="mt-32 mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-            Leadership & <span className="text-pink-accent italic">Impact.</span>
+          <span className="text-pink-accent italic">Organizations</span>
           </h2>
           <p className="text-lg text-ink/60 max-w-2xl font-light">
-            Building communities and leading teams through active organizational involvement.
           </p>
         </motion.div>
 
@@ -113,20 +112,20 @@ export default function ExperiencePage() {
             {
               title: "Head of Division",
               org: "Aksara Jurnalistik Telkom University",
-              period: "2023 - Present",
-              desc: "Leading editorial strategy and content production for student-led journalism."
+              period: "2023 - 2025",
+              desc: "Held roles including Junior Journalist, Division Head (Central Social Intelligence), and Treasurer. Involved in editorial coordination and event organization."
             },
             {
-              title: "Business & Entrepreneurship Staff",
-              org: "Himpunan Mahasiswa S1 Informatika",
+              title: "HIMA IF",
+              org: "Student Association of Informatics Engineering, Telkom University",
+              period: "2024 - 2025",
+              desc: "Business & Entrepreneurship Staff and Division Secretary. Managed merchandise programs, adminstrative coordination, and internal documentation."
+            },
+            {
+              title: "CCI Media Management",
+              org: "UKM reasoning in IT",
               period: "2023",
-              desc: "Managing association administrative tasks and supporting student business initiatives."
-            },
-            {
-              title: "Committee – Homecoming Roadshow",
-              org: "UKM Samalowa Telkom University",
-              period: "2022",
-              desc: "Coordinating logistics and event planning for regional student outreach."
+              desc: "Managed social media content."
             }
           ].map((org, idx) => (
             <motion.div
@@ -148,7 +147,95 @@ export default function ExperiencePage() {
             </motion.div>
           ))}
         </div>
-      </div>
+      {/* Selected Events */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6}}
+              viewport={{ once: true }}
+              className="mt-32 mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                Selected <span className="text-pink-accent italic">Events</span>
+              </h2>
+              </motion.div>
+              <div className="grid gap-6 mb-20">
+                {[
+                  {
+                    title: "Chief Organizer - Launching Majalah Podium",
+                    period: "2024",
+                    desc: "Led the planning and execution of magazine launching event and public talk session."
+                  },
+                  {
+                    title: "Roadshow Samalowa",
+                    period: "2023 - 2024",
+                    desc: "Coordinated outreach and academic tryout sessions for prospective university students."
+                  },
+                  {
+                    title: "Fortran Informatics Orientation",
+                    period: "2024",
+                    desc: "Served as Liaison Officer and Division Secretary, supporting coordination and documentation."
+                  }
+                ].map((event, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: idx * 0.1 }}
+                    viewport={{ once: true }}
+                    className="p-8 rounded-3xl bg-white border border-pink-soft/10 shadow-sm hover:shadow-md transition-all"
+                  >
+                    <div>
+                      <h3 className="text-xl font-serif font-bold text-ink">{event.title}</h3>
+                      <p className="mt-2 text-ink/60 text-sm font-light">{event.desc}</p>
+                    </div>
+                    <div className="mt-4 shrink-0 px-4 py-1 rounded-full bg-cream text-ink/40 text-[10px] font-bold uppercase tracking-widest border border-pink-soft/10 w-max">
+                      {event.period}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+      {/* Competitions & Programs*/}
+      <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6}}
+              viewport={{ once: true }}
+              className="mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                <span className="text-pink-accent italic">Competitions</span>
+              </h2>
+              </motion.div>
+              <div className="grid gap-6 mb-20">
+                {[
+                  {
+                    title: "Competitive Programming COMPFEST 16",
+                    period: "2024",
+                  },
+                  {
+                    title: "Competitive Programming Mage X ITS",
+                    period: "2024",
+                  }
+                ].map((comp, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: idx * 0.1 }}
+                    viewport={{ once: true }}
+                    className="p-8 rounded-3xl bg-white border border-pink-soft/10 shadow-sm hover:shadow-md transition-all"
+                  >
+                    <div>
+                      <h3 className="text-xl font-serif font-bold text-ink">{comp.title}</h3>
+                    </div>
+                    <div className="mt-4 shrink-0 px-4 py-1 rounded-full bg-cream text-ink/40 text-[10px] font-bold uppercase tracking-widest border border-pink-soft/10 w-max">
+                      {comp.period}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>  
+      </div>         
     </section>
   );
 }

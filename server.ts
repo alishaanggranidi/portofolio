@@ -1,6 +1,6 @@
 import express from "express";
 import { createServer as createViteServer } from "vite";
-import Groq from "groq-sdk";
+import OpenAI from "openai";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -18,13 +18,13 @@ async function startServer() {
       const apiKey = process.env.GROQ_API_KEY;
 
       if (!apiKey) {
-        return res.status(500).json({ error: "GROQ_API_KEY is not configured." });
+        return res.status(500).json({ error: "openai_API_KEY is not configured." });
       }
 
-      const groq = new Groq({ apiKey });
+      const openai = new OpenAI({ apiKey });
 
-      const completion = await groq.chat.completions.create({
-        model: "llama3-8b-8192",
+      const completion = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
         messages: [
           {
             role: "system",
@@ -43,7 +43,7 @@ async function startServer() {
         reply: completion.choices[0].message.content,
       });
     } catch (error) {
-      console.error("Groq Error:", error);
+      console.error("OpenAI Error:", error);
       res.status(500).json({ error: "Something went wrong." });
     }
   });
