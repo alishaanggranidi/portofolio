@@ -66,7 +66,7 @@ export const projects: Project[] = [
       "Scikit-learn"
     ],
     demo: "https://youtu.be/Eqh0h5OgEbU?feature=shared",
-    image: "/public/images/projects/emolog.png",
+    image: "/images/projects/emolog.png",
   },
 
   // 4
@@ -115,7 +115,7 @@ export const projects: Project[] = [
       "Google Sheets API"
     ],
     github: "https://github.com/alishaanggranidi/etl-pipeline",
-    image: "/public/images/projects/etl.png",
+    image: "/images/projects/etl.png",
   },
 
   // 7
