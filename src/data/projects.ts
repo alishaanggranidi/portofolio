@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "Embedding Models",
       "Langfuse"
     ],
-    image: "/public/images/projects/agentic.png",
+    image: "/images/projects/agentic.png",
   },
 
   // 2
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "Seaborn"
     ],
     github: "https://github.com/alishaanggranidi/ta",
-    image: "/public/images/projects/breastcancer.png",
+    image: "/images/projects/breastcancer.png",
   },
 
   // 3
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "Experiment Documentation",
       "Cross-Functional Collaboration"
     ],
-    image: "/public/images/projects/aiframework.png",
+    image: "/images/projects/aiframework.png",
   },
 
   // 5
@@ -97,7 +97,7 @@ export const projects: Project[] = [
       "Scoring Analysis",
       "Documentation"
     ],
-    image: "/public/images/projects/aimaturity.png",
+    image: "/images/projects/aimaturity.png",
   },
 
   // 6
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       "TensorFlow / Keras"
     ],
     github: "https://github.com/alishaanggranidi/recommender-system",
-    image: "/public/images/projects/recommender.png",
+    image: "/images/projects/recommender.png",
   },
 
   // 8
@@ -149,7 +149,7 @@ export const projects: Project[] = [
       "JavaScript",
       "Google Sheets API"
     ],
-    image: "/public/images/projects/automation.png",
+    image: "/images/projects/automation.png",
   },
 
   // 9
@@ -166,7 +166,7 @@ export const projects: Project[] = [
       "TensorFlow.js"
     ],
     github: "https://github.com/alishaanggranidi/klasifikasigambar",
-    image: "/public/images/projects/waste.png",
+    image: "/images/projects/waste.png",
   },
 
   // 10
@@ -183,7 +183,7 @@ export const projects: Project[] = [
       "CSS"
     ],
     github: "https://github.com/alishaanggranidi/joypad",
-    image: "/public/images/projects/joypad.png",
+    image: "/images/projects/joypad.png",
   },
 
   // 11
@@ -202,7 +202,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/alishaanggranidi/Analysis-Bike-Rental",
     demo: "https://analysis-bike-rental-alishaanggranidi.streamlit.app",
-    image: "/public/images/projects/dashboard.png",
+    image: "/images/projects/dashboard.png",
   }
 
 ];

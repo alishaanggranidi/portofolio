@@ -81,18 +81,41 @@ export default function Hero() {
         {/* Tech Stack Rail */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 1 }}
-          className="mt-20 pt-10 border-t border-pink-soft/20"
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mt-12" 
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-ink/40 mb-6 font-bold">Tech Stack</p>
-          <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-mono text-ink/50">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-ink/40 mb-6 font-bold">
+            Tech Stack
+          </p>
+
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: { staggerChildren: 0.1 }
+              }
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex flex-wrap gap-3" 
+          >
             {["Python", "RAG Architecture", "Tensorflow", "PyTorch", "Pinecone", "FastAPI", "PostgreSQL"].map((tech) => (
-              <span key={tech} className="hover:text-pink-accent transition-colors cursor-default">
+              <motion.span
+                key={tech}
+                variants={{
+                  hidden: { opacity: 0, x: -10 }, 
+                  show: { opacity: 1, x: 0 }
+                }}
+                className="px-4 py-2 text-xs font-medium rounded-full bg-pink-soft/10 text-pink-accent border border-pink-soft/20 shadow-sm hover:bg-pink-accent hover:text-white transition-all cursor-default"
+              >
                 {tech}
-              </span>
+              </motion.span>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
