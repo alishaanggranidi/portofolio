@@ -65,7 +65,7 @@ export default function Header() {
           })}
 
           <a
-            href="/cv/Alisha_Anggranidi_Salsabila_CV.pdf"
+            href="/pdf/Alisha_Anggranidi_Salsabila_CV.pdf"
             target="_blank"
             className="bg-pink-accent text-white px-5 py-2.5 rounded-2xl text-sm font-medium hover:shadow-lg hover:shadow-pink-accent/20 transition-all active:scale-95"
           >
@@ -130,7 +130,7 @@ export default function Header() {
 
             <div className="p-10 border-t border-pink-soft/10">
               <a
-                href="/cv/Alisha_Anggranidi_Salsabila_CV.pdf"
+                href="/pdf/Alisha_Anggranidi_Salsabila_CV.pdf"
                 target="_blank"
                 className="block bg-pink-accent text-white px-6 py-4 rounded-2xl text-center font-bold shadow-xl shadow-pink-accent/20"
               >

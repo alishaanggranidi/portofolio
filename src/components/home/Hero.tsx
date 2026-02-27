@@ -61,7 +61,7 @@ export default function Hero() {
 
           <div className="flex gap-4">
             <a
-              href="/public/pdf/Alisha_Anggranidi_Salsabila_CV.pdf"
+              href="/pdf/Alisha_Anggranidi_Salsabila_CV.pdf"
               target="_blank"
               className="text-ink/70 hover:text-pink-accent font-medium transition-colors underline underline-offset-8"
             >
@@ -69,7 +69,7 @@ export default function Hero() {
             </a>
             <span className="text-pink-soft/40">/</span>
             <a
-              href="/public/pdf/Alisha_Anggranidi_Salsabila_Portfolio.pdf"
+              href="/pdf/Alisha_Anggranidi_Salsabila_Portofolio.pdf"
               target="_blank"
               className="text-ink/70 hover:text-pink-accent font-medium transition-colors underline underline-offset-8"
             >
