@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Code2, Server, Globe, Cpu, Cloud, Award } from "lucide-react";
 import { desc } from "motion/react-client";
+import Image from "next/image";
 
 export default function SkillsPage() {
   const skillGroups = [
@@ -113,7 +114,7 @@ export default function SkillsPage() {
               }
             ].map((achievement, idx) => (
               <div key={idx} className="p-8 bg-white rounded-3xl border border-pink-soft/10 shadow-sm hover:shadow-md transition-shadow">
-                <img src={achievement.image} alt={achievement.title} className="w-full h-60 object-cover rounded-xl mb-4" />
+                <Image src={achievement.image} alt={achievement.title} width={800} height={600} className="rounded-xl mb-4 w-full h-auto object-cover" />
                 <p className="text-pink-accent font-mono text-xs uppercase tracking-widest mb-4"></p>
                 <h4 className="text-xl font-serif font-bold mb-3">{achievement.title}</h4>
                 <p className="text-ink/60 font-light">{achievement.desc}</p>
