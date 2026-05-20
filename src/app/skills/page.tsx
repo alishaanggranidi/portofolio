@@ -104,12 +104,12 @@ export default function SkillsPage() {
               {
                 title: "Conference & Academic Achievements",
                 desc: "Presenter ICGTD Conference",
-                image: "/public/images/achievements/icgtd.png"
+                image: "/images/achievements/icgtd.png"
               },
               {
                 title: "Dicoding Camp Powered by DBS Foundation",
                 desc: "Machine Learning Path (2025), Top 5 Most Interactive Student at English ILT Weekly Session.",
-                image: "/public/images/achievements/dicoding.png"
+                image: "/images/achievements/dicoding.png"
               }
             ].map((achievement, idx) => (
               <div key={idx} className="p-8 bg-white rounded-3xl border border-pink-soft/10 shadow-sm hover:shadow-md transition-shadow">
